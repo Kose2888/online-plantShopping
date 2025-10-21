@@ -1,8 +1,8 @@
-.about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
+ .about-us-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0px;
     text-align: justify;
   }
   
@@ -23,6 +23,7 @@
   .about-us-content {
     font-size: 18px;
     margin-bottom: 20px;
+    text-align: left;
   }
   .plant_logo_right{
     text-align: right;
@@ -31,3 +32,9 @@
   .plant_logo_left{
     text-align: left;
   }
+
+  @media screen and (max-width: 480px) {
+  .about-us-container img {
+    max-width: 40px;
+  }
+}

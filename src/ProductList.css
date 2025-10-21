@@ -54,8 +54,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
     border: 1px solid gray;
     border-radius: 5px;
     background-color:#4CAF50;
@@ -64,7 +64,7 @@ body {
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 25px;
     /* background-color: pink; */
     /* justify-content: space-between; */
     padding: 20px;
@@ -75,8 +75,6 @@ body {
 
 /* Product Card */
 .product-card {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
-    max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
@@ -84,7 +82,7 @@ body {
     border-radius: 5px;
     text-align: center;
     position: relative;
-    
+    width: 15%;
     gap: 20px;
 }
 
@@ -109,6 +107,13 @@ body {
 .product-image {
     max-width: 100%;
     height: 200px; /* Adjust height for better consistency */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-description {
+    margin: 10px 0;
+    line-height: 1.4;
 }
 
 .product-button {
@@ -127,14 +132,14 @@ body {
 
 /* Pseudo-elements - Sale badge */
 .product-card::before {
-    content: "SALE";
-    background-color: #e74c3c;
+    content: none;
+/*     background-color: #e74c3c;
     color: #fff;
     position: absolute;
     top: 0;
     right: 0;
     padding: 5px 10px;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px; */
 }
 .tag_home_link{
     display: flex;
@@ -214,6 +219,7 @@ body {
 .product-button {
     background-color: #4CAF50; /* Green */
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -223,6 +229,7 @@ body {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 100%;
   }
   
   .product-button:hover {
@@ -262,6 +269,10 @@ body {
     
       .ul div {
         text-align: center; /* Align text to the center */
+      }
+
+      .category {
+        font-size: 24px;
       }
   }
 
